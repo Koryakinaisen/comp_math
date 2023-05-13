@@ -18,9 +18,9 @@ iptables -t mangle -X
 iptables -P INPUT ACCEPT
 iptables -P FORWARD ACCEPT
 iptables -P OUTPUT ACCEPT
-echo "auto vlan105" >> /etc/network/interfaces
-echo "iface vlan105 inet static" >> /etc/network/interfaces
-echo "address 192.17.4.105" >> /etc/network/interfaces
+echo "auto vlan205" >> /etc/network/interfaces
+echo "iface vlan205 inet static" >> /etc/network/interfaces
+echo "address 192.17.4.129" >> /etc/network/interfaces
 echo "netmask 255.255.255.128" >> /etc/network/interfaces
 echo "vlan_raw_device enp0s3" >> /etc/network/interfaces
 echo "Rebooting"
